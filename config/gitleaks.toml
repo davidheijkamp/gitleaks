@@ -2041,7 +2041,7 @@ keywords = [
 [[rules]]
 id = "gitlab-ptt"
 description = "GitLab Pipeline Trigger Token"
-regex = '''glptt-[0-9a-f]{40}'''
+regex = ''''glptt-[0-9a-zA-Z_\-]{20}'''
 keywords = [
     "glptt-",
 ]
@@ -2052,6 +2052,22 @@ description = "GitLab Runner Registration Token"
 regex = '''GR1348941[0-9a-zA-Z\-\_]{20}'''
 keywords = [
     "gr1348941",
+]
+
+[[rules]]
+id = "gitlab_runner_auth_token"
+description = "GitLab Runner Authentication Token"
+regex = '''glrt-[0-9a-zA-Z_\-]{20}'''
+keywords = [
+    "glrt",
+]
+
+[[rules]]
+id = "gitlab_feed_token"
+description = "GitLab Feed Token"
+regex = '''feed_token=[0-9a-zA-Z_\-]{20}'''
+keywords = [
+    "feed_token",
 ]
 
 [[rules]]
