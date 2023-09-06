@@ -2041,7 +2041,7 @@ keywords = [
 [[rules]]
 id = "gitlab-ptt"
 description = "GitLab Pipeline Trigger Token"
-regex = ''''glptt-[0-9a-zA-Z_\-]{20}'''
+regex = '''glptt-[0-9a-zA-Z_\-]{20}'''
 keywords = [
     "glptt-",
 ]
